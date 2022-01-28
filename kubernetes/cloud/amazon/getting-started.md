@@ -1,9 +1,8 @@
-# Getting Started with EKS
+## Getting Started with EKS
 
-## Amazon CLI
+### Amazon CLI
 
 ```
-
 # Run Amazon CLI
 docker run -it --rm -v ${PWD}:/work -w /work --entrypoint /bin/sh amazon/aws-cli:2.0.17
 
@@ -12,12 +11,12 @@ cd ./kubernetes/cloud/amazon
 yum install jq gzip nano tar git
 ```
 
-## Login to AWS
+### Login to AWS
 
 https://docs.aws.amazon.com/eks/latest/userguide/getting-started-console.html
 
 ```
-# Access your "My Security Credentials" section in your profile. 
+# Access your "My Security Credentials" section in your profile.
 # Create an access key
 
 aws configure
@@ -27,15 +26,13 @@ https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvaila
 
 ```
 
+## Deploy Cluster with AWS CLI
 
-# Deploy Cluster with AWS CLI
-
-You can deploy a cluster using multiple ways.  </br>
+You can deploy a cluster using multiple ways. </br>
 We will cover the two fundamental ways.
 
-1) AWS CLI https://docs.aws.amazon.com/eks/latest/userguide/getting-started-console.html
-2) EKS CLI (newer) https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html
-
+1. AWS CLI https://docs.aws.amazon.com/eks/latest/userguide/getting-started-console.html
+2. EKS CLI (newer) https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html
 
 ## AWS CLI
 
@@ -56,7 +53,7 @@ aws iam attach-role-policy --role-name getting-started-eks-role --policy-arn arn
 curl https://amazon-eks.s3.us-west-2.amazonaws.com/cloudformation/2020-05-08/amazon-eks-vpc-sample.yaml -o vpc.yaml
 aws cloudformation deploy --template-file vpc.yaml --stack-name getting-started-eks
 
-# grab your stack details 
+# grab your stack details
 aws cloudformation list-stack-resources --stack-name getting-started-eks > stack.json
 
 # create our cluster
@@ -69,7 +66,6 @@ aws eks create-cluster \
 aws eks list-clusters
 aws eks describe-cluster --name getting-started-eks
 ```
-
 
 ## Get a kubeconfig for our cluster
 
@@ -97,8 +93,8 @@ aws iam attach-role-policy --role-name getting-started-eks-role-nodes --policy-a
 aws iam attach-role-policy --role-name getting-started-eks-role-nodes --policy-arn arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly
 
 ```
-More details on node permissions [here](https://docs.aws.amazon.com/eks/latest/userguide/worker_node_IAM_role.html)
 
+More details on node permissions [here](https://docs.aws.amazon.com/eks/latest/userguide/worker_node_IAM_role.html)
 
 More details on instance types to choose from [here](https://aws.amazon.com/ec2/instance-types/)
 
@@ -137,8 +133,8 @@ eksctl create cluster --name getting-started-eks \
 --node-volume-size 200 \
 --ssh-access \
 --ssh-public-key=~/.ssh/id_rsa.pub \
-
 ```
+
 ## Create some sample containers
 
 ```
@@ -146,7 +142,7 @@ cd ../..
 
 kubectl create ns example-app
 
-# lets create some resources.
+# Lets create some resources.
 kubectl apply -n example-app -f secrets/secret.yaml
 kubectl apply -n example-app -f configmaps/configmap.yaml
 kubectl apply -n example-app -f deployments/deployment.yaml
@@ -155,7 +151,8 @@ kubectl apply -n example-app -f deployments/deployment.yaml
 kubectl apply -n example-app -f services/service.yaml
 
 ```
-## Cleanup 
+
+## Cleanup
 
 ```
 

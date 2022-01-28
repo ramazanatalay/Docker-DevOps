@@ -1,0 +1,73 @@
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQWMrZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeU1ERXlOakUxTXpFME1sb1hEVE15TURFeU5ERTFNekUwTWxvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTzJ3CnlaYktaczdjZ01yZ01mTjI2emhpVlZzb2prWFZpMk5MMnFpTmRqQkZ3aWozTU1FVkJIaGFDaFFpMFdtUkorWUIKUEQ4ODd5WEVkMTkrbTYrZGN5cHVVTjZhU2Z5RXZsMGwrR0lCSHpwM01lbWMrQTBHalBQZGwrRm5QdnA0RXNTaAorcDhYZ1VLRmUydjFEdVRiUVRURjl3VG93YzVSTmpRVmhzYjR6L0ZBRFRlRVU3UVUxOEFhKzZvc3JvTXVMd3FUCmUrV0paaDFoajJvdisvbjJBVzRRZjVaYUtZaW50MXpreE9naG1wVldhdzcyc0JrWHZadnRvd3NGZnp3VWNKNU4Kdit2Z0Vlai9wU2JjR1RoQjhaMzRwdDREWC9zMFdWU2VIRGZsRXVORjFpSGI1WjVuWmxOWENTa2xveUEzYmdOago0Ums0bm5mM2g5b1ZhYjhmV2dzQ0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZJMHcwZm5BVTcxZkwrVkphdkN0T2ZPbVVPQUFNQTBHQ1NxR1NJYjMKRFFFQkN3VUFBNElCQVFBRDBHR2ZZblBCRllPNytBc3p4czZOUFZUUEpQbXI2ejJzSDVPZ1l6QzdTUHJJandvVwpWWlpXYkV3cGhKZjBWb3BTdXFiL2VJUmJPdHVETXIwWU5oNVc3dGdTL0NnVThNMXlDVGRaOEdIVVVYaXZsRjcwClk4M21WWEdCRkpjdld5NWhLMUl0SEEzNlFDOThFNENnS291L1UyM2NuL0kwYVZXNG0rV0hPUlRzUFN3eWk4ZFMKVmlvczVnc2Zpak13VW84WXNuYkFnLzBkTW4rUktzRFllM1U1dDdrSEJkRG5Bdi9EYjVja2dDYXFxbVhHdGJlcwpsb3IxeThNY1k3OWpLMXlpdlNyL2QxWU9EOGI5ditOZVc2a25rZkorL05GMHNoVmhsa1FEczJ5OVZQOFdIZENCClREa2JVS3R3Wll3RE9hL2hoQzBZSUFsN1pxRkhSSWlIdDlJUwotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
+    server: https://F18731BB808E2275D3F09192C1589EE4.gr7.us-east-1.eks.amazonaws.com
+  name: arn:aws:eks:us-east-1:036197227464:cluster/getting-started-eks
+- cluster:
+    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQWMrZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeU1ERXlOakl5TlRFMU9Gb1hEVE15TURFeU5ESXlOVEUxT0Zvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBS09VClRZRktwV0hQR0NxSWRJQ3BJVDR1czdDM2FDQnloTnRDbDJzM1pINUpFZjNqN3FiMlpkTTZ2dW5BSjZ4VU5aTXgKSTBTMUVqUk5adkhROEh2YVJpOS9MNHNWSTI4Ry9GSHFJOFlCUENHUzlNUFY1eW1DMlZscWllK1hJalpIRVF1cApLS3V2eWZ5V0tsWkRnOUtjWVlwbndRRGEzbjE5aUhWVVorSFdKODBxaXBJT3EzdmRCNmw1czcyR3pBVzRXVVQ4ClYvRjlHSkRtemtWQjhHUXpUS1hqaU1xWFhXMTIzZEROQUxZOTJndGpjSEdJTmRRWXhjK2RBbWE4ZGVKSDNnZ2QKaUJKMHgzeWNhOVJtTlcrV2tRRkJyOVV0THRkbW9CMjJ6UE0xY2p4Y3ozbFFSYUVDeUYxQVlrcm03ajA2N1dCRQo1TmxJTFVEbHZaV3lZMGpXS0owQ0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZFVU9NOHFiNnBXWWVSSkNBUEpMcTNMOHJSMkNNQTBHQ1NxR1NJYjMKRFFFQkN3VUFBNElCQVFBNmJiTjkxdU0zZk9LdWNNUWRMdmlwNnNxVVAxUVh2VVdvV2k5dXdBY1YwZDlYOCtZbQoyTW5FcTg3MEJOUlRlSmV2cXhnMGhRYzhITEJ0RlBxRXNwYm9VdFd2cVo0ZEhkTE05dHoxVEtJWll5WjVNQUsrCkRCa3k2ZnZ2YS9KSVpVakIwWjdnOXV4N1dHQW5sNzl1K0c5dU1UamM2SmkwQVJmcnFPaGc1SU1TZ3lWWW9DMUMKZklzMEx2THY4L3A1YWI5UzVpTEg0UTVzeGJsNU13VWhMeS8vMzE5cm53M2pLZ3lmTUQzSXJ5aHB4VnREalBpbAp5ZnZHbjBqdFhYMHZFdW14MnlybU4wNGxCU2diSnB0WUhLYW5QalBHQ3JMYnlkenBQSjZYK0pxbS8xTGRWZFUrCmVxTFVhdGNNNnVYdHhkekYrSG5LV202Q05KekxlS0pVekpWSAotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
+    server: https://B9DA43F0ED2BF68A11E0E917D0BA949A.gr7.us-east-1.eks.amazonaws.com
+  name: getting-started-eks-new.us-east-1.eksctl.io
+- cluster:
+    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQWMrZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeU1ERXlOakl5TlRFMU9Gb1hEVE15TURFeU5ESXlOVEUxT0Zvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBS09VClRZRktwV0hQR0NxSWRJQ3BJVDR1czdDM2FDQnloTnRDbDJzM1pINUpFZjNqN3FiMlpkTTZ2dW5BSjZ4VU5aTXgKSTBTMUVqUk5adkhROEh2YVJpOS9MNHNWSTI4Ry9GSHFJOFlCUENHUzlNUFY1eW1DMlZscWllK1hJalpIRVF1cApLS3V2eWZ5V0tsWkRnOUtjWVlwbndRRGEzbjE5aUhWVVorSFdKODBxaXBJT3EzdmRCNmw1czcyR3pBVzRXVVQ4ClYvRjlHSkRtemtWQjhHUXpUS1hqaU1xWFhXMTIzZEROQUxZOTJndGpjSEdJTmRRWXhjK2RBbWE4ZGVKSDNnZ2QKaUJKMHgzeWNhOVJtTlcrV2tRRkJyOVV0THRkbW9CMjJ6UE0xY2p4Y3ozbFFSYUVDeUYxQVlrcm03ajA2N1dCRQo1TmxJTFVEbHZaV3lZMGpXS0owQ0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZFVU9NOHFiNnBXWWVSSkNBUEpMcTNMOHJSMkNNQTBHQ1NxR1NJYjMKRFFFQkN3VUFBNElCQVFBNmJiTjkxdU0zZk9LdWNNUWRMdmlwNnNxVVAxUVh2VVdvV2k5dXdBY1YwZDlYOCtZbQoyTW5FcTg3MEJOUlRlSmV2cXhnMGhRYzhITEJ0RlBxRXNwYm9VdFd2cVo0ZEhkTE05dHoxVEtJWll5WjVNQUsrCkRCa3k2ZnZ2YS9KSVpVakIwWjdnOXV4N1dHQW5sNzl1K0c5dU1UamM2SmkwQVJmcnFPaGc1SU1TZ3lWWW9DMUMKZklzMEx2THY4L3A1YWI5UzVpTEg0UTVzeGJsNU13VWhMeS8vMzE5cm53M2pLZ3lmTUQzSXJ5aHB4VnREalBpbAp5ZnZHbjBqdFhYMHZFdW14MnlybU4wNGxCU2diSnB0WUhLYW5QalBHQ3JMYnlkenBQSjZYK0pxbS8xTGRWZFUrCmVxTFVhdGNNNnVYdHhkekYrSG5LV202Q05KekxlS0pVekpWSAotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
+    server: https://B9DA43F0ED2BF68A11E0E917D0BA949A.gr7.us-east-1.eks.amazonaws.com
+  name: arn:aws:eks:us-east-1:036197227464:cluster/getting-started-eks-new
+contexts:
+- context:
+    cluster: getting-started-eks-new.us-east-1.eksctl.io
+    user: admin@getting-started-eks-new.us-east-1.eksctl.io
+  name: admin@getting-started-eks-new.us-east-1.eksctl.io
+- context:
+    cluster: arn:aws:eks:us-east-1:036197227464:cluster/getting-started-eks
+    user: arn:aws:eks:us-east-1:036197227464:cluster/getting-started-eks
+  name: arn:aws:eks:us-east-1:036197227464:cluster/getting-started-eks
+- context:
+    cluster: arn:aws:eks:us-east-1:036197227464:cluster/getting-started-eks-new
+    user: arn:aws:eks:us-east-1:036197227464:cluster/getting-started-eks-new
+  name: arn:aws:eks:us-east-1:036197227464:cluster/getting-started-eks-new
+current-context: arn:aws:eks:us-east-1:036197227464:cluster/getting-started-eks-new
+kind: Config
+preferences: {}
+users:
+- name: admin@getting-started-eks-new.us-east-1.eksctl.io
+  user:
+    exec:
+      apiVersion: client.authentication.k8s.io/v1alpha1
+      args:
+      - eks
+      - get-token
+      - --cluster-name
+      - getting-started-eks-new
+      - --region
+      - us-east-1
+      command: aws
+      env:
+      - name: AWS_STS_REGIONAL_ENDPOINTS
+        value: regional
+      provideClusterInfo: false
+- name: arn:aws:eks:us-east-1:036197227464:cluster/getting-started-eks
+  user:
+    exec:
+      apiVersion: client.authentication.k8s.io/v1alpha1
+      args:
+      - --region
+      - us-east-1
+      - eks
+      - get-token
+      - --cluster-name
+      - getting-started-eks
+      command: aws
+      env: null
+      provideClusterInfo: false
+- name: arn:aws:eks:us-east-1:036197227464:cluster/getting-started-eks-new
+  user:
+    exec:
+      apiVersion: client.authentication.k8s.io/v1alpha1
+      args:
+      - --region
+      - us-east-1
+      - eks
+      - get-token
+      - --cluster-name
+      - getting-started-eks-new
+      command: aws

@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = work
+build_property.ProjectDir = /Users/ramazanatalay/Documents/Docker-DevOps/monitoring/prometheus/dotnet-application/src/
